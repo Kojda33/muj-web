@@ -1,0 +1,89 @@
+/* Moderní box model - nastavená šířka boxu je včetně paddingu a borderu */
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  /*
+  sTo nahoře je černá magie, na to raději nešahej.
+  Ale sem dolů už si můžeš psát, co budeš chtít.
+  
+  Tohle je mimochodem opět komentář, ale v CSS.
+  Začíná a končí trochu jinak než v HTML, ale
+  princip je stejný.
+  ------------------------------------------------
+  */
+  body {
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .uvod img {
+    width: 400px;
+    height: 500px;
+    float: left;
+    padding-right: 30px;
+  }
+
+  h1 {
+    text-align: center;
+    background:url(obrazky/hlavicka.jpg) center center no-repeat;
+    margin:0;
+    padding: 20px;
+    font-size: 50px;
+    font-family: "DM Serif Text", serif;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 50px;
+    
+  }
+
+  nav {
+    text-align: center;
+    padding: 30px;
+    background-color: blue;
+    background-size: cover;
+  }
+
+  nav a {
+    text-align: center;
+    padding: 30px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: "DM Serif Text", serif;
+  }
+
+  nav a:hover {
+    background-color: #4EA5D9;
+    border-bottom: 2px solid #C3F73A;
+  }
+
+  .uvod {
+    font-size:20px;
+    margin: 0;
+    padding: 50px 15%;
+    background-color: #E1EFE6;
+    font-family: "DM Serif Text", serif;
+  }
+
+  section {
+    overflow: auto;
+  }
+
+  footer {
+    text-align: center;
+    font-family: serif;
+    padding: 10px;
+    background-color: #1B37F0;
+    color: white;
+
+  }
